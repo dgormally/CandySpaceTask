@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="black_800">#121212</color>
+    <color name="black_900">#000000</color>
+    <color name="blue_100">#d2dbe0</color>
+    <color name="blue_200">#adbbc4</color>
+    <color name="blue_300">#8ca2ae</color>
+    <color name="blue_50">#eef0f2</color>
+    <color name="blue_600">#4a6572</color>
+    <color name="blue_700">#344955</color>
+    <color name="blue_800">#232f34</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimaryVariant">#000000</color>
+    <color name="colorSecondary">#2962FF</color>
+    <color name="colorSecondaryVariant">#0039CB</color>
+    <color name="gray">#dddddd</color>
+    <color name="gray_light">#e3e3e3</color>
+    <color name="orange_300">#fbd790</color>
+    <color name="orange_400">#f9be64</color>
+    <color name="orange_500">#f9aa33</color>
+    <color name="red_200">#cf7779</color>
+    <color name="red_400">#ff4c5d</color>
+    <color name="reply_white_50">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <dimen name="article_body">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="app_name">CandySpace Task</string>
+    <string name="toolbar_title">CandySpace Task</string>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.CandySpace" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorError">@color/colorOnSecondary</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:windowBackground">@color/gray</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+    <style name="Theme.CandySpace.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>

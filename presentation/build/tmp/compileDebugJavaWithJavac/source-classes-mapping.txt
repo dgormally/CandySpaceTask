@@ -1,0 +1,4 @@
+com/davidg/candyspacetask/BuildConfig.java
+ com.davidg.candyspacetask.BuildConfig
+com/davidg/candyspacetask/databinding/ActivityMainBinding.java
+ com.davidg.candyspacetask.databinding.ActivityMainBinding

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CandySpaceTask.iml" filepath="$PROJECT_DIR$/.idea/modules/CandySpaceTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CandySpaceTask.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CandySpaceTask.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CandySpaceTask.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/CandySpaceTask.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/CandySpaceTask.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/CandySpaceTask.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/CandySpaceTask.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/CandySpaceTask.domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/presentation/CandySpaceTask.presentation.iml" filepath="$PROJECT_DIR$/.idea/modules/presentation/CandySpaceTask.presentation.iml" />
+    </modules>
+  </component>
+</project>

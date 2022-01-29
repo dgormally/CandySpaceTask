@@ -1,0 +1,2 @@
+com/davidg/candyspacetask/BuildConfig.java
+ com.davidg.candyspacetask.BuildConfig
