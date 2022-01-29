@@ -6,23 +6,35 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import com.davidg.candyspacetask.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final CoordinatorLayout rootView;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final FragmentContainerView mainContainerFragment;
+
+  @NonNull
+  public final Toolbar mainToolbar;
+
+  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull FragmentContainerView mainContainerFragment, @NonNull Toolbar mainToolbar) {
     this.rootView = rootView;
+    this.mainContainerFragment = mainContainerFragment;
+    this.mainToolbar = mainToolbar;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +55,26 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public static ActivityMainBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.main_container_fragment;
+      FragmentContainerView mainContainerFragment = rootView.findViewById(id);
+      if (mainContainerFragment == null) {
+        break missingId;
+      }
 
-    return new ActivityMainBinding((ConstraintLayout) rootView);
+      id = R.id.mainToolbar;
+      Toolbar mainToolbar = rootView.findViewById(id);
+      if (mainToolbar == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((CoordinatorLayout) rootView, mainContainerFragment,
+          mainToolbar);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

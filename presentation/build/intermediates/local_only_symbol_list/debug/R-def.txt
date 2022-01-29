@@ -1,5 +1,11 @@
 R_DEF: Internal format may change without notice
 local
+anim fade_in
+anim fade_out
+anim slide_in_left
+anim slide_in_right
+anim slide_out_left
+anim slide_out_right
 color black
 color black_800
 color black_900
@@ -30,11 +36,22 @@ color white
 dimen article_body
 dimen fab_margin
 drawable divider_shape
+drawable ic_close
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id mainFragment
+id mainToolbar
+id main_container_fragment
+id progress
+id progress_scan
+id recycler_articles
+id txtConnecting
 layout activity_main
+layout fragment_main
+layout progress_layout
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation nav_graph
 string app_name
 string toolbar_title
 style AppTheme.AppBarOverlay

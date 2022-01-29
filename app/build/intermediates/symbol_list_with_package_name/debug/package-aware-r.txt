@@ -27,6 +27,8 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
+anim fade_out
 anim fragment_fast_out_extra_slow_in
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
@@ -35,6 +37,10 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim slide_in_left
+anim slide_in_right
+anim slide_out_left
+anim slide_out_right
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1677,6 +1683,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable divider_shape
 drawable ic_clock_black_24dp
+drawable ic_close
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1923,6 +1930,9 @@ id line3
 id linear
 id listMode
 id list_item
+id mainFragment
+id mainToolbar
+id main_container_fragment
 id masked
 id material_clock_display
 id material_clock_face
@@ -2004,11 +2014,14 @@ id percent
 id pin
 id position
 id postLayout
+id progress
 id progress_circular
 id progress_horizontal
+id progress_scan
 id radio
 id ratio
 id rectangles
+id recycler_articles
 id reverseSawtooth
 id right
 id right_icon
@@ -2120,6 +2133,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tv_progress
+id txtConnecting
 id unchecked
 id uniform
 id unlabeled
@@ -2214,6 +2228,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_main
 layout layout_icon_round_corner_progress_bar
 layout layout_round_corner_progress_bar
 layout layout_text_round_corner_progress_bar
@@ -2265,6 +2280,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout progress_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2285,6 +2301,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

@@ -5,7 +5,9 @@
       <map>
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.18697916666666667" />
         <entry key="myapplication/src/main/res/layout/activity_main2.xml" value="0.17760416666666667" />
+        <entry key="presentation/src/main/res/drawable/ic_close.xml" value="0.2814814814814815" />
         <entry key="presentation/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="presentation/src/main/res/layout/progress_layout.xml" value="0.28940217391304346" />
       </map>
     </option>
   </component>

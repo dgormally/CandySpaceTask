@@ -2,3 +2,7 @@ com/davidg/candyspacetask/BuildConfig.java
  com.davidg.candyspacetask.BuildConfig
 com/davidg/candyspacetask/databinding/ActivityMainBinding.java
  com.davidg.candyspacetask.databinding.ActivityMainBinding
+com/davidg/candyspacetask/databinding/ProgressLayoutBinding.java
+ com.davidg.candyspacetask.databinding.ProgressLayoutBinding
+com/davidg/candyspacetask/databinding/FragmentMainBinding.java
+ com.davidg.candyspacetask.databinding.FragmentMainBinding
