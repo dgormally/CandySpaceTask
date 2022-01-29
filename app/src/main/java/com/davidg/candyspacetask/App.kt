@@ -3,6 +3,8 @@ package com.davidg.candyspacetask
 import android.app.Application
 import com.davidg.candyspacetask.data.di.networkingModule
 import com.davidg.candyspacetask.data.di.networkingRepoModule
+import com.davidg.candyspacetask.di.presentationModule
+import com.davidg.candyspacetask.domain.di.domainModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext
@@ -14,6 +16,9 @@ import kotlin.time.ExperimentalTime
 class App : Application() {
 
     private val networkModules = listOf(networkingModule, networkingRepoModule)
+    private val domainModules = listOf(domainModule)
+    private val presentationModules = listOf(presentationModule)
+
 
     override fun onCreate() {
         super.onCreate()
@@ -21,8 +26,8 @@ class App : Application() {
             androidContext(this@App)
             androidLogger(Level.NONE)
             modules(
-                networkModules
-
+                networkModules+presentationModules
+                        +domainModules
             )
         }
     }

@@ -21,6 +21,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setUpToolBar()
+        mainViewModel.searchUser()
     }
 
     private fun setUpToolBar(){
