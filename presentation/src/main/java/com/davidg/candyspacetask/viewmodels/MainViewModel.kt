@@ -33,9 +33,7 @@ class MainViewModel(
             getUsersUseCase.execute(user.toString())
                 .flowOn(Dispatchers.IO)
                 .collect {
-
                     when (it) {
-
                         is NetworkResultState.Success -> {
                             if (it.data.isEmpty()) {
                                 usersStateFlow.value = StackListViewState.Empty
