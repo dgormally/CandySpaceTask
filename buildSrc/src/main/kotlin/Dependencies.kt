@@ -15,7 +15,6 @@ object appConfig {
     const val versionCode = 1
     const val versionName = "1.0"
 }
-
 object deps{
     object androidx {
 
@@ -26,6 +25,8 @@ object deps{
         const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:2.3.1"
         const val navigationKtx = "androidx.navigation:navigation-ui-ktx:2.3.0"
         const val viewFlowBindings = "io.github.reactivecircus.flowbinding:flowbinding-android:0.12.0"
+        const val paging = "androidx.paging:paging-runtime:3.0.0-alpha12"
+        const val coil = "io.coil-kt:coil:1.4.0"
 
     }
     object koin {

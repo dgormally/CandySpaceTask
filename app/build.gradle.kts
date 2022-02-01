@@ -6,6 +6,7 @@ plugins {
     id("kotlin-android")
 }
 
+
 android {
 
     packagingOptions {
@@ -48,10 +49,15 @@ android {
 }
 dependencies {
     implementation(presentation)
-    implementation(data)
     implementation(domain)
     implementation(deps.androidx.appCompat)
     implementation(deps.jetbrains.coroutinesAndroid)
     implementation(deps.koin.android)
-    testImplementation(deps.test.junit)
+   // testImplementation(deps.test.junit)
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("androidx.test.ext:junit-ktx:1.1.3")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    androidTestImplementation("androidx.test:runner:1.4.0")
+    androidTestImplementation("androidx.test:rules:1.4.0")
+
 }

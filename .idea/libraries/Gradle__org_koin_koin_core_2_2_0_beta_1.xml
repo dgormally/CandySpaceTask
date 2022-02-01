@@ -3,7 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/2.2.0-beta-1/a7f3d861b9f00e61ec7456911d31a27bb733b928/koin-core-2.2.0-beta-1.jar!/" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/2.2.0-beta-1/49a055acaf0b8b6a7a2710b06a821eeea3af66f2/koin-core-2.2.0-beta-1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/2.2.0-beta-1/ce906adf714b31b0337dbd6313aa4f97ae441a45/koin-core-2.2.0-beta-1-sources.jar!/" />
     </SOURCES>

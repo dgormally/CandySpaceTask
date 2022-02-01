@@ -7,5 +7,20 @@
         android:id="@+id/mainFragment"
         android:name="com.davidg.candyspacetask.fragments.MainFragment"
         tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/toDetails"
+            app:destination="@id/articleDetails"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetails"
+        android:name="com.davidg.candyspacetask.fragments.DetailsFragment"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="userDetails"
+            app:argType="com.davidg.candyspacetask.domain.model.StackUsersModel" />
     </fragment>
 </navigation>

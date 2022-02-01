@@ -26,8 +26,6 @@ int anim design_bottom_sheet_slide_in 0x0
 int anim design_bottom_sheet_slide_out 0x0
 int anim design_snackbar_in 0x0
 int anim design_snackbar_out 0x0
-int anim fade_in 0x0
-int anim fade_out 0x0
 int anim fragment_close_enter 0x0
 int anim fragment_close_exit 0x0
 int anim fragment_fade_enter 0x0
@@ -668,6 +666,7 @@ int attr navigationIcon 0x0
 int attr navigationMode 0x0
 int attr navigationViewStyle 0x0
 int attr nestedScrollFlags 0x0
+int attr nestedScrollViewStyle 0x0
 int attr nullable 0x0
 int attr number 0x0
 int attr numericModifiers 0x0
@@ -727,6 +726,7 @@ int attr progressBarStyle 0x0
 int attr progressIndicatorStyle 0x0
 int attr queryBackground 0x0
 int attr queryHint 0x0
+int attr queryPatterns 0x0
 int attr radioButtonStyle 0x0
 int attr rangeFillColor 0x0
 int attr ratingBarStyle 0x0
@@ -788,6 +788,7 @@ int attr shapeAppearanceLargeComponent 0x0
 int attr shapeAppearanceMediumComponent 0x0
 int attr shapeAppearanceOverlay 0x0
 int attr shapeAppearanceSmallComponent 0x0
+int attr shortcutMatchRequired 0x0
 int attr showAsAction 0x0
 int attr showDividers 0x0
 int attr showMotionSpec 0x0
@@ -1024,15 +1025,6 @@ int color background_floating_material_light 0x0
 int color background_material_dark 0x0
 int color background_material_light 0x0
 int color black 0x0
-int color black_800 0x0
-int color black_900 0x0
-int color blue_100 0x0
-int color blue_200 0x0
-int color blue_300 0x0
-int color blue_50 0x0
-int color blue_600 0x0
-int color blue_700 0x0
-int color blue_800 0x0
 int color bright_foreground_disabled_material_dark 0x0
 int color bright_foreground_disabled_material_light 0x0
 int color bright_foreground_inverse_material_dark 0x0
@@ -1047,12 +1039,8 @@ int color cardview_shadow_end_color 0x0
 int color cardview_shadow_start_color 0x0
 int color checkbox_themeable_attribute_color 0x0
 int color colorAccent 0x0
-int color colorOnPrimary 0x0
 int color colorOnSecondary 0x0
 int color colorPrimary 0x0
-int color colorPrimaryDark 0x0
-int color colorPrimaryVariant 0x0
-int color colorSecondary 0x0
 int color colorSecondaryVariant 0x0
 int color design_bottom_navigation_shadow_color 0x0
 int color design_box_stroke_color 0x0
@@ -1102,7 +1090,6 @@ int color error_color_material_light 0x0
 int color foreground_material_dark 0x0
 int color foreground_material_light 0x0
 int color gray 0x0
-int color gray_light 0x0
 int color highlighted_text_material_dark 0x0
 int color highlighted_text_material_light 0x0
 int color material_blue_grey_800 0x0
@@ -1191,9 +1178,7 @@ int color mtrl_textinput_focused_box_stroke_color 0x0
 int color mtrl_textinput_hovered_box_stroke_color 0x0
 int color notification_action_color_filter 0x0
 int color notification_icon_bg_color 0x0
-int color orange_300 0x0
-int color orange_400 0x0
-int color orange_500 0x0
+int color notification_material_background_media_default_color 0x0
 int color primary_dark_material_dark 0x0
 int color primary_dark_material_light 0x0
 int color primary_material_dark 0x0
@@ -1203,9 +1188,6 @@ int color primary_text_default_material_light 0x0
 int color primary_text_disabled_material_dark 0x0
 int color primary_text_disabled_material_light 0x0
 int color radiobutton_themeable_attribute_color 0x0
-int color red_200 0x0
-int color red_400 0x0
-int color reply_white_50 0x0
 int color ripple_material_dark 0x0
 int color ripple_material_light 0x0
 int color round_corner_progress_bar_background_default 0x0
@@ -1309,7 +1291,6 @@ int dimen abc_text_size_title_material 0x0
 int dimen abc_text_size_title_material_toolbar 0x0
 int dimen action_bar_size 0x0
 int dimen appcompat_dialog_background_inset 0x0
-int dimen article_body 0x0
 int dimen cardview_compat_inset_shadow 0x0
 int dimen cardview_default_elevation 0x0
 int dimen cardview_default_radius 0x0
@@ -1371,7 +1352,6 @@ int dimen design_tab_text_size_2line 0x0
 int dimen design_textinput_caption_translate_y 0x0
 int dimen disabled_alpha_material_dark 0x0
 int dimen disabled_alpha_material_light 0x0
-int dimen fab_margin 0x0
 int dimen fastscroll_default_thickness 0x0
 int dimen fastscroll_margin 0x0
 int dimen fastscroll_minimum_range 0x0
@@ -1586,6 +1566,10 @@ int dimen notification_small_icon_size_as_large 0x0
 int dimen notification_subtext_size 0x0
 int dimen notification_top_pad 0x0
 int dimen notification_top_pad_large_text 0x0
+int dimen subtitle_corner_radius 0x0
+int dimen subtitle_outline_width 0x0
+int dimen subtitle_shadow_offset 0x0
+int dimen subtitle_shadow_radius 0x0
 int dimen test_mtrl_calendar_day_cornerSize 0x0
 int dimen tooltip_corner_radius 0x0
 int dimen tooltip_horizontal_padding 0x0
@@ -1787,6 +1771,7 @@ int id accessibility_custom_action_6 0x0
 int id accessibility_custom_action_7 0x0
 int id accessibility_custom_action_8 0x0
 int id accessibility_custom_action_9 0x0
+int id action0 0x0
 int id action_bar 0x0
 int id action_bar_activity_content 0x0
 int id action_bar_container 0x0
@@ -1811,6 +1796,7 @@ int id alertTitle 0x0
 int id aligned 0x0
 int id animateToEnd 0x0
 int id animateToStart 0x0
+int id articleDetails 0x0
 int id asConfigured 0x0
 int id async 0x0
 int id auto 0x0
@@ -1823,7 +1809,9 @@ int id bidirectional 0x0
 int id blocking 0x0
 int id bottom 0x0
 int id bounce 0x0
+int id broonzeBadge 0x0
 int id buttonPanel 0x0
+int id cancel_action 0x0
 int id cancel_button 0x0
 int id center 0x0
 int id chain 0x0
@@ -1838,12 +1826,14 @@ int id chronometer 0x0
 int id circle_center 0x0
 int id circular 0x0
 int id clear_text 0x0
+int id coil_request_manager 0x0
 int id confirm_button 0x0
 int id container 0x0
 int id content 0x0
 int id contentPanel 0x0
 int id coordinator 0x0
 int id cos 0x0
+int id creation_date 0x0
 int id custom 0x0
 int id customPanel 0x0
 int id cut 0x0
@@ -1870,7 +1860,9 @@ int id easeIn 0x0
 int id easeInOut 0x0
 int id easeOut 0x0
 int id edit_query 0x0
+int id empty 0x0
 int id end 0x0
+int id end_padder 0x0
 int id expand_activities_button 0x0
 int id expanded_menu 0x0
 int id fade 0x0
@@ -1883,10 +1875,12 @@ int id forever 0x0
 int id fragment_container_view_tag 0x0
 int id ghost_view 0x0
 int id ghost_view_holder 0x0
+int id goldBadge 0x0
 int id gone 0x0
 int id group_divider 0x0
 int id guideline 0x0
 int id header_title 0x0
+int id heroName 0x0
 int id home 0x0
 int id honorRequest 0x0
 int id icon 0x0
@@ -1894,6 +1888,7 @@ int id icon_group 0x0
 int id ignore 0x0
 int id ignoreRequest 0x0
 int id image 0x0
+int id imgBackdrop 0x0
 int id incoming 0x0
 int id info 0x0
 int id inside 0x0
@@ -1916,6 +1911,7 @@ int id line3 0x0
 int id linear 0x0
 int id listMode 0x0
 int id list_item 0x0
+int id location 0x0
 int id mainFragment 0x0
 int id mainToolbar 0x0
 int id main_container_fragment 0x0
@@ -1939,6 +1935,7 @@ int id material_timepicker_mode_button 0x0
 int id material_timepicker_ok_button 0x0
 int id material_timepicker_view 0x0
 int id material_value_index 0x0
+int id media_actions 0x0
 int id message 0x0
 int id middle 0x0
 int id mini 0x0
@@ -2000,10 +1997,10 @@ int id postLayout 0x0
 int id progress 0x0
 int id progress_circular 0x0
 int id progress_horizontal 0x0
-int id progress_scan 0x0
 int id radio 0x0
 int id rectangles 0x0
-int id recycler_articles 0x0
+int id recycler_users 0x0
+int id reputation 0x0
 int id reverseSawtooth 0x0
 int id right 0x0
 int id right_icon 0x0
@@ -2021,6 +2018,7 @@ int id scrollIndicatorDown 0x0
 int id scrollIndicatorUp 0x0
 int id scrollView 0x0
 int id scrollable 0x0
+int id searchBtn 0x0
 int id search_badge 0x0
 int id search_bar 0x0
 int id search_button 0x0
@@ -2035,6 +2033,7 @@ int id select_dialog_listview 0x0
 int id selected 0x0
 int id selection_type 0x0
 int id shortcut 0x0
+int id silverBadge 0x0
 int id sin 0x0
 int id slide 0x0
 int id smallLabel 0x0
@@ -2056,6 +2055,7 @@ int id startHorizontal 0x0
 int id startVertical 0x0
 int id staticLayout 0x0
 int id staticPostLayout 0x0
+int id status_bar_latest_event_content 0x0
 int id stop 0x0
 int id stretch 0x0
 int id submenuarrow 0x0
@@ -2095,6 +2095,7 @@ int id time 0x0
 int id title 0x0
 int id titleDividerNoCustom 0x0
 int id title_template 0x0
+int id toDetails 0x0
 int id top 0x0
 int id topPanel 0x0
 int id touch_outside 0x0
@@ -2105,11 +2106,11 @@ int id transition_scene_layoutid_cache 0x0
 int id transition_transform 0x0
 int id triangle 0x0
 int id tv_progress 0x0
-int id txtConnecting 0x0
 int id unchecked 0x0
 int id uniform 0x0
 int id unlabeled 0x0
 int id up 0x0
+int id username 0x0
 int id view_offset_helper 0x0
 int id view_tree_lifecycle_owner 0x0
 int id view_tree_saved_state_registry_owner 0x0
@@ -2199,10 +2200,13 @@ int layout design_navigation_menu_item 0x0
 int layout design_text_input_end_icon 0x0
 int layout design_text_input_password_icon 0x0
 int layout design_text_input_start_icon 0x0
+int layout empty 0x0
+int layout fragment_details 0x0
 int layout fragment_main 0x0
 int layout layout_icon_round_corner_progress_bar 0x0
 int layout layout_round_corner_progress_bar 0x0
 int layout layout_text_round_corner_progress_bar 0x0
+int layout list_item 0x0
 int layout material_chip_input_combo 0x0
 int layout material_clock_display 0x0
 int layout material_clock_display_divider 0x0
@@ -2247,8 +2251,17 @@ int layout mtrl_picker_text_input_date 0x0
 int layout mtrl_picker_text_input_date_range 0x0
 int layout notification_action 0x0
 int layout notification_action_tombstone 0x0
+int layout notification_media_action 0x0
+int layout notification_media_cancel_action 0x0
+int layout notification_template_big_media 0x0
+int layout notification_template_big_media_custom 0x0
+int layout notification_template_big_media_narrow 0x0
+int layout notification_template_big_media_narrow_custom 0x0
 int layout notification_template_custom_big 0x0
 int layout notification_template_icon_group 0x0
+int layout notification_template_lines_media 0x0
+int layout notification_template_media 0x0
+int layout notification_template_media_custom 0x0
 int layout notification_template_part_chronometer 0x0
 int layout notification_template_part_time 0x0
 int layout progress_layout 0x0
@@ -2321,6 +2334,7 @@ int string character_counter_overflowed_content_description 0x0
 int string character_counter_pattern 0x0
 int string chip_text 0x0
 int string clear_text_end_icon_content_description 0x0
+int string enter_search 0x0
 int string error_icon_content_description 0x0
 int string exposed_dropdown_menu_content_description 0x0
 int string fab_transformation_scrim_behavior 0x0
@@ -2378,14 +2392,17 @@ int string mtrl_picker_toggle_to_text_input_mode 0x0
 int string mtrl_picker_toggle_to_year_selection 0x0
 int string nav_app_bar_navigate_up_description 0x0
 int string nav_app_bar_open_drawer_description 0x0
+int string no_results 0x0
+int string opps 0x0
 int string password_toggle_content_description 0x0
 int string path_password_eye 0x0
 int string path_password_eye_mask_strike_through 0x0
 int string path_password_eye_mask_visible 0x0
 int string path_password_strike_through 0x0
+int string profileImage 0x0
+int string search 0x0
 int string search_menu_title 0x0
 int string status_bar_notification_info_overflow 0x0
-int string toolbar_title 0x0
 int style AlertDialog_AppCompat 0x0
 int style AlertDialog_AppCompat_Light 0x0
 int style AndroidThemeColorAccentYellow 0x0
@@ -2394,8 +2411,6 @@ int style Animation_AppCompat_DropDownUp 0x0
 int style Animation_AppCompat_Tooltip 0x0
 int style Animation_Design_BottomSheetDialog 0x0
 int style Animation_MaterialComponents_BottomSheetDialog 0x0
-int style AppTheme_AppBarOverlay 0x0
-int style AppTheme_PopupOverlay 0x0
 int style Base_AlertDialog_AppCompat 0x0
 int style Base_AlertDialog_AppCompat_Light 0x0
 int style Base_Animation_AppCompat_Dialog 0x0
@@ -2620,6 +2635,7 @@ int style CardView 0x0
 int style CardView_Dark 0x0
 int style CardView_Light 0x0
 int style EmptyTheme 0x0
+int style FragmentScenarioEmptyFragmentActivityTheme 0x0
 int style MaterialAlertDialog_MaterialComponents 0x0
 int style MaterialAlertDialog_MaterialComponents_Body_Text 0x0
 int style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar 0x0
@@ -2743,9 +2759,14 @@ int style TextAppearance_AppCompat_Widget_Switch 0x0
 int style TextAppearance_AppCompat_Widget_TextView_SpinnerItem 0x0
 int style TextAppearance_Compat_Notification 0x0
 int style TextAppearance_Compat_Notification_Info 0x0
+int style TextAppearance_Compat_Notification_Info_Media 0x0
 int style TextAppearance_Compat_Notification_Line2 0x0
+int style TextAppearance_Compat_Notification_Line2_Media 0x0
+int style TextAppearance_Compat_Notification_Media 0x0
 int style TextAppearance_Compat_Notification_Time 0x0
+int style TextAppearance_Compat_Notification_Time_Media 0x0
 int style TextAppearance_Compat_Notification_Title 0x0
+int style TextAppearance_Compat_Notification_Title_Media 0x0
 int style TextAppearance_Design_CollapsingToolbar_Expanded 0x0
 int style TextAppearance_Design_Counter 0x0
 int style TextAppearance_Design_Counter_Overflow 0x0
@@ -2848,7 +2869,6 @@ int style Theme_AppCompat_Light_Dialog_MinWidth 0x0
 int style Theme_AppCompat_Light_NoActionBar 0x0
 int style Theme_AppCompat_NoActionBar 0x0
 int style Theme_CandySpace 0x0
-int style Theme_CandySpace_PopupOverlay 0x0
 int style Theme_Design 0x0
 int style Theme_Design_BottomSheetDialog 0x0
 int style Theme_Design_Light 0x0
@@ -3095,7 +3115,6 @@ int style Widget_MaterialComponents_Toolbar_PrimarySurface 0x0
 int style Widget_MaterialComponents_Toolbar_Surface 0x0
 int style Widget_MaterialComponents_Tooltip 0x0
 int style Widget_Support_CoordinatorLayout 0x0
-int style circleImageView 0x0
 int[] styleable ActionBar { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1
@@ -3420,6 +3439,9 @@ int styleable BottomSheetBehavior_Layout_shapeAppearance 11
 int styleable BottomSheetBehavior_Layout_shapeAppearanceOverlay 12
 int[] styleable ButtonBarLayout { 0x0 }
 int styleable ButtonBarLayout_allowStacking 0
+int[] styleable Capability { 0x0, 0x0 }
+int styleable Capability_queryPatterns 0
+int styleable Capability_shortcutMatchRequired 1
 int[] styleable CardView { 0x1010140, 0x101013f, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 }
 int styleable CardView_android_minHeight 0
 int styleable CardView_android_minWidth 1

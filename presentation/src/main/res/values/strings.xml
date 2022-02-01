@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CandySpace Task</string>
-    <string name="toolbar_title">CandySpace Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="opps">Opps something went wrong, please try again</string>
+    <string name="no_results">No results found. Please try again</string>
+    <string name="profileImage">Profile Image</string>
+    <string name="enter_search">Enter search here..</string>
+    <string name="search">Search</string>
 </resources>

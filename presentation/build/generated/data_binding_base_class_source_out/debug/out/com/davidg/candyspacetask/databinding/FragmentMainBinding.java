@@ -4,6 +4,8 @@ package com.davidg.candyspacetask.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,12 +21,20 @@ public final class FragmentMainBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerArticles;
+  public final RecyclerView recyclerUsers;
 
-  private FragmentMainBinding(@NonNull LinearLayout rootView,
-      @NonNull RecyclerView recyclerArticles) {
+  @NonNull
+  public final EditText searchBar;
+
+  @NonNull
+  public final Button searchBtn;
+
+  private FragmentMainBinding(@NonNull LinearLayout rootView, @NonNull RecyclerView recyclerUsers,
+      @NonNull EditText searchBar, @NonNull Button searchBtn) {
     this.rootView = rootView;
-    this.recyclerArticles = recyclerArticles;
+    this.recyclerUsers = recyclerUsers;
+    this.searchBar = searchBar;
+    this.searchBtn = searchBtn;
   }
 
   @Override
@@ -54,13 +64,25 @@ public final class FragmentMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recycler_articles;
-      RecyclerView recyclerArticles = rootView.findViewById(id);
-      if (recyclerArticles == null) {
+      id = R.id.recycler_users;
+      RecyclerView recyclerUsers = rootView.findViewById(id);
+      if (recyclerUsers == null) {
         break missingId;
       }
 
-      return new FragmentMainBinding((LinearLayout) rootView, recyclerArticles);
+      id = R.id.search_bar;
+      EditText searchBar = rootView.findViewById(id);
+      if (searchBar == null) {
+        break missingId;
+      }
+
+      id = R.id.searchBtn;
+      Button searchBtn = rootView.findViewById(id);
+      if (searchBtn == null) {
+        break missingId;
+      }
+
+      return new FragmentMainBinding((LinearLayout) rootView, recyclerUsers, searchBar, searchBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

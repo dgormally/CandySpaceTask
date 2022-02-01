@@ -44,5 +44,4 @@ dependencies {
     implementation(deps.squareup.okio)
     implementation(deps.koin.core)
     implementation(deps.koin.android)
-
 }

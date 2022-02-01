@@ -6,8 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import com.davidg.candyspacetask.R;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final LinearLayoutCompat rootView;
 
   @NonNull
   public final FragmentContainerView mainContainerFragment;
@@ -25,7 +25,7 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final Toolbar mainToolbar;
 
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
+  private ActivityMainBinding(@NonNull LinearLayoutCompat rootView,
       @NonNull FragmentContainerView mainContainerFragment, @NonNull Toolbar mainToolbar) {
     this.rootView = rootView;
     this.mainContainerFragment = mainContainerFragment;
@@ -34,7 +34,7 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public LinearLayoutCompat getRoot() {
     return rootView;
   }
 
@@ -71,7 +71,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, mainContainerFragment,
+      return new ActivityMainBinding((LinearLayoutCompat) rootView, mainContainerFragment,
           mainToolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
