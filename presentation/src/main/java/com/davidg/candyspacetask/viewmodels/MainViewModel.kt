@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import com.davidg.candyspacetask.common.utils.CountingIdlingResourceSingleton
 import com.davidg.candyspacetask.domain.common.NetworkResultState
 import com.davidg.candyspacetask.domain.model.StackUsersModel
 import com.davidg.candyspacetask.domain.usecase.GetUsersUseCase
@@ -32,7 +33,9 @@ class MainViewModel(
             getUsersUseCase.execute(user.toString())
                 .flowOn(Dispatchers.IO)
                 .collect {
+
                     when (it) {
+
                         is NetworkResultState.Success -> {
                             if (it.data.isEmpty()) {
                                 usersStateFlow.value = StackListViewState.Empty

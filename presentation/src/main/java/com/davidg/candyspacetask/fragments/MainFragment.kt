@@ -3,6 +3,7 @@ package com.davidg.candyspacetask.fragments
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.annotation.VisibleForTesting
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -13,6 +14,7 @@ import com.davidg.candyspacetask.R
 import com.davidg.candyspacetask.adapters.StackUsersRecyclerAdapter
 import com.davidg.candyspacetask.adapters.adaptersInterface.StackItemInterface
 import com.davidg.candyspacetask.common.extensions.hideKeyboard
+import com.davidg.candyspacetask.common.utils.CountingIdlingResourceSingleton
 import com.davidg.candyspacetask.domain.common.NetworkResultState
 import com.davidg.candyspacetask.domain.model.ErrorModel
 import com.davidg.candyspacetask.domain.model.StackUsersModel
@@ -25,9 +27,9 @@ import kotlinx.coroutines.flow.collect
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.lang.ClassCastException
 
-class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface {
+final class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface {
 
-    private val mainViewModel: MainViewModel by viewModel()
+   val mainViewModel: MainViewModel by viewModel()
 
     private val usersAdapter: StackUsersRecyclerAdapter by lazy {
         StackUsersRecyclerAdapter(emptyList(), coroutineScope = lifecycleScope, stackItemInterface = this)
@@ -45,14 +47,20 @@ class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface {
     private fun setUpOnClickListeners() {
         searchBtn.setOnClickListener {
           if(search_bar.text.toString().isNotEmpty()) {
-                mainViewModel.getUsers(search_bar.text.toString())
+               mainViewModel.getUsers(search_bar.text.toString())
                 search_bar.text.clear()
                 hideKeyboard()
             }
         }
     }
 
-    private fun getUsers(){
+    @VisibleForTesting
+    fun getUsersTest(){
+        mainViewModel.getUsers()
+    }
+
+    @VisibleForTesting
+    fun getUsers(){
         lifecycleScope.launchWhenStarted {
           mainViewModel._usersStateFlow.collect {
                 when (it) {
@@ -97,7 +105,6 @@ class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface {
         }
     }
 
-
     private fun setupRecyclerView() {
         val layoutManagerVertical = LinearLayoutManager(requireContext())
         recycler_users.layoutManager = layoutManagerVertical
@@ -118,6 +125,9 @@ class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface {
             val action = MainFragmentDirections.toDetails(it)
             view?.findNavController()?.navigate(action)
         }
+    }
+    companion object {
+        fun newInstance() = MainFragment()
     }
 }
 
