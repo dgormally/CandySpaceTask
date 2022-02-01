@@ -1,8 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/davidgormally/AndroidStudioProjects/CandySpaceTask/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/davidgormally/CandySpaceTask/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
+                {
+                    "source": "/Users/davidgormally/CandySpaceTask/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "823"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "732",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "1453"
+                    }
+                },
                 {
                     "source": "/Users/davidgormally/.gradle/caches/transforms-3/8d24d4a94b9c4150deb7c4d83e6158e0/transformed/appcompat-1.3.1/res/values-night-v8/values-night-v8.xml",
                     "from": {
@@ -35,25 +54,6 @@
                         "startOffsets": "1458,1546,1670,1772,1874,1990,2092,2206,2334,2450,2572,2708,2828,2962,3082,3194,3409,3547,3671,3801,3923,4061,4177",
                         "endColumns": "87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,137,123,129,121,137,115,119",
                         "endOffsets": "1541,1665,1767,1869,1985,2087,2201,2329,2445,2567,2703,2823,2957,3077,3189,3315,3542,3666,3796,3918,4056,4172,4292"
-                    }
-                },
-                {
-                    "source": "/Users/davidgormally/AndroidStudioProjects/CandySpaceTask/app/src/main/res/values-night/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "823"
-                    },
-                    "to": {
-                        "startLines": "9",
-                        "startColumns": "4",
-                        "startOffsets": "732",
-                        "endLines": "21",
-                        "endColumns": "12",
-                        "endOffsets": "1453"
                     }
                 }
             ]

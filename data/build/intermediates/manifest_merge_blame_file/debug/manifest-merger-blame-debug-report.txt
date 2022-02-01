@@ -6,8 +6,8 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/davidgormally/AndroidStudioProjects/CandySpaceTask/data/src/main/AndroidManifest.xml
+8-->/Users/davidgormally/CandySpaceTask/data/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/Users/davidgormally/AndroidStudioProjects/CandySpaceTask/data/src/main/AndroidManifest.xml
+9-->/Users/davidgormally/CandySpaceTask/data/src/main/AndroidManifest.xml
 10
 11</manifest>

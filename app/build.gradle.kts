@@ -50,6 +50,7 @@ android {
 dependencies {
     implementation(presentation)
     implementation(domain)
+    implementation(data)
     implementation(deps.androidx.appCompat)
     implementation(deps.jetbrains.coroutinesAndroid)
     implementation(deps.koin.android)

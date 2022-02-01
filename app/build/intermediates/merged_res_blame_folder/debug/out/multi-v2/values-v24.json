@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/davidgormally/AndroidStudioProjects/CandySpaceTask/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/davidgormally/CandySpaceTask/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/davidgormally/.gradle/caches/transforms-3/51938520f3b8a69b1cc60e5a88065049/transformed/media-1.0.0/res/values-v24/values-v24.xml",

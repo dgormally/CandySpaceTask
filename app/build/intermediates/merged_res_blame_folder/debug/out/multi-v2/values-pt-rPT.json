@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/davidgormally/AndroidStudioProjects/CandySpaceTask/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
+            "outputFile": "/Users/davidgormally/CandySpaceTask/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml",
             "map": [
                 {
                     "source": "/Users/davidgormally/.gradle/caches/transforms-3/d770f6e152987bd61c06ef5cd8fca538/transformed/core-1.6.0/res/values-pt-rPT/values-pt-rPT.xml",
