@@ -14,8 +14,6 @@ import com.davidg.candyspacetask.R
 import com.davidg.candyspacetask.adapters.StackUsersRecyclerAdapter
 import com.davidg.candyspacetask.adapters.adaptersInterface.StackItemInterface
 import com.davidg.candyspacetask.common.extensions.hideKeyboard
-import com.davidg.candyspacetask.common.utils.CountingIdlingResourceSingleton
-import com.davidg.candyspacetask.domain.common.NetworkResultState
 import com.davidg.candyspacetask.domain.model.ErrorModel
 import com.davidg.candyspacetask.domain.model.StackUsersModel
 import com.davidg.candyspacetask.ui.StackListViewState
@@ -47,17 +45,13 @@ final class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface 
     private fun setUpOnClickListeners() {
         searchBtn.setOnClickListener {
           if(search_bar.text.toString().isNotEmpty()) {
-               mainViewModel.getUsers(search_bar.text.toString())
+               mainViewModel.getUsers(search_bar.text.toString(), pageSize = 20)
                 search_bar.text.clear()
                 hideKeyboard()
             }
         }
     }
 
-    @VisibleForTesting
-    fun getUsersTest(){
-        mainViewModel.getUsers()
-    }
 
     @VisibleForTesting
     fun getUsers(){
@@ -70,17 +64,25 @@ final class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface 
                     }
 
                     is StackListViewState.Success -> {
-                        progress.isVisible = false
-                        recycler_users.visibility = View.VISIBLE
-                        empty.visibility = View.GONE
-                        usersAdapter.submitData(it.data)
+                        if(it.data?.isEmpty() == true){
+                            progress.isVisible = false
+                            recycler_users.visibility = View.GONE
+                            empty.visibility = View.VISIBLE
+                            message.text = getString(R.string.no_results)
+                        }else {
+                            progress.isVisible = false
+                            recycler_users.visibility = View.VISIBLE
+                            empty.visibility = View.GONE
+                            Log.v("David", "${it.data}")
+                            it.data?.let { it1 -> usersAdapter.submitData(it1) }
+                        }
                     }
 
                     is StackListViewState.Failure -> {
                         //This is how we would retrieve the api error respond. I'm NOT going
                         //to use it because the messages are not user friendly, so instead I'm just going to display a generic message
                         try {
-                            val apiErrorResponse = it.errorModel as ErrorModel.ServerError
+                            val apiErrorResponse = it as ErrorModel.ServerError
                             if (apiErrorResponse != null) {
                                 Log.v("DAVID", "Response code is ${apiErrorResponse.code}")
                                 Log.v("DAVID", "Response message is ${apiErrorResponse.message}")
@@ -92,13 +94,6 @@ final class MainFragment : Fragment(R.layout.fragment_main), StackItemInterface 
                         recycler_users.visibility = View.GONE
                         empty.visibility = View.VISIBLE
                         message.text = getString(R.string.opps)
-                    }
-
-                is StackListViewState.Empty -> {
-                        progress.isVisible = false
-                        recycler_users.visibility = View.GONE
-                        empty.visibility = View.VISIBLE
-                        message.text = getString(R.string.no_results)
                     }
                 }
             }

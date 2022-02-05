@@ -7,6 +7,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface NetworkRepo {
 
-        fun getUsers(name: String): Flow<NetworkResultState<List<StackUsersModel>>>
+        fun getUsers(name: String, pageSize: Int): Flow<NetworkResultState<List<StackUsersModel>>>
 
 }

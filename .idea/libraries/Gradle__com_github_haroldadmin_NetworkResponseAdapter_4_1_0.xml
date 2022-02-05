@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.haroldadmin:NetworkResponseAdapter:4.1.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.haroldadmin/NetworkResponseAdapter/4.1.0/a5e16e8952b71a0f1bf4cf2b573a6c2202b5e601/NetworkResponseAdapter-4.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.github.haroldadmin/NetworkResponseAdapter/4.1.0/a5e16e8952b71a0f1bf4cf2b573a6c2202b5e601/NetworkResponseAdapter-4.1.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.haroldadmin/NetworkResponseAdapter/4.1.0/5c21251d57c8997101758d1093204db9dc21f1db/NetworkResponseAdapter-4.1.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.github.haroldadmin/NetworkResponseAdapter/4.1.0/5c21251d57c8997101758d1093204db9dc21f1db/NetworkResponseAdapter-4.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

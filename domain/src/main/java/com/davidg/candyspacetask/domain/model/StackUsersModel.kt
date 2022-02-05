@@ -8,7 +8,7 @@ data class StackUsersModel(
     val accountID: Int,
     val userName: String,
     val avatar: String,
-    val location: String,
+    val location: String? = null,
     val creation_date: Long,
     val reputation: Int,
     val noOfBronze: Int,

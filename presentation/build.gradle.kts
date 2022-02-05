@@ -57,24 +57,21 @@ dependencies {
     implementation(deps.squareup.loggingInterceptor)
     implementation(deps.androidx.appCompat)
     implementation(deps.akexorcist.cornerProgress)
+    implementation(deps.squareup.moshiKotlin)
+    implementation(deps.squareup.converterMoshi)
     implementation(deps.androidx.navigationFragment)
-    implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    implementation("androidx.test.ext:junit-ktx:1.1.3")
-    debugImplementation("androidx.fragment:fragment-testing:1.3.6")
-    implementation("androidx.test.espresso:espresso-idling-resource:3.4.0")
-    implementation("androidx.test.espresso:espresso-intents:3.4.0")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.test:runner:1.4.0")
-    androidTestImplementation("androidx.test:rules:1.4.0")
-    androidTestImplementation("org.koin:koin-test:2.1.6")
-    androidTestImplementation("androidx.test:core:1.2.0")
-    androidTestImplementation("org.mockito:mockito-core:2.25.1")
-    androidTestImplementation("org.mockito:mockito-inline:2.25.1")
-    androidTestImplementation ("io.mockk:mockk:1.10.0")
-    androidTestImplementation("io.mockk:mockk-android:1.10.0") {
-        exclude(module = "objenesis")
-    }
-
+    /**-------------------testing libs------------------------------------------**/
+    //UI Testing , AndroidJUnitRunner and JUnit Rules &Espresso dependencies
+    //junit 5
+    testImplementation ("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    testImplementation ("io.mockk:mockk:1.10.5")
+    androidTestImplementation("org.assertj:assertj-core:3.19.0")
+    androidTestImplementation ("androidx.test.espresso:espresso-intents:3.30")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2-native-mt")
+    implementation ("androidx.arch.core:core-testing:2.1.0")
+    implementation ("androidx.test.espresso:espresso-idling-resource:3.3.0")
+    implementation ("androidx.test.espresso:espresso-contrib:3.3.0")
+    /**-------------------------------------------------------------**/
 
 
 }

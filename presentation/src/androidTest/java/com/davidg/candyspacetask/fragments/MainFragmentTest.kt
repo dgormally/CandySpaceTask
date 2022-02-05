@@ -5,42 +5,25 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.StyleRes
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.testing.FragmentScenario
-import androidx.fragment.app.testing.FragmentScenario.Companion.launchInContainer
-import androidx.fragment.app.testing.launchFragmentInContainer
-import androidx.lifecycle.Lifecycle
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
-import androidx.test.espresso.Espresso
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.IdlingRegistry
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.typeText
-import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.core.internal.deps.dagger.internal.Preconditions
-import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import androidx.test.ext.junit.rules.ActivityScenarioRule
-import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.filters.LargeTest
-import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
-import androidx.test.runner.AndroidJUnitRunner
 import com.davidg.candyspacetask.R
 import com.davidg.candyspacetask.activities.MainActivity
-import com.davidg.candyspacetask.common.utils.CountingIdlingResourceSingleton
 import com.davidg.candyspacetask.data.di.networkingModule
 import com.davidg.candyspacetask.data.di.networkingRepoModule
 import com.davidg.candyspacetask.di.presentationModule
 import com.davidg.candyspacetask.domain.di.domainModule
 import com.davidg.candyspacetask.waitUntilVisible
-import io.mockk.impl.annotations.MockK
 import io.mockk.spyk
-import io.mockk.unmockkAll
 import org.junit.After
 import org.junit.Before
-import org.junit.Rule
 import org.junit.Test
-import org.junit.rules.RuleChain
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 import org.koin.android.ext.koin.androidContext
@@ -48,9 +31,6 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.GlobalContext
 import org.koin.core.context.stopKoin
 import org.koin.core.logger.Level
-import org.mockito.Mock
-import org.mockito.MockitoAnnotations
-import org.mockito.Spy
 
 @RunWith(JUnit4::class)
 class MainFragmentTest {
@@ -71,7 +51,7 @@ class MainFragmentTest {
                         + domainModules
             )
         }
-        IdlingRegistry.getInstance().register(CountingIdlingResourceSingleton.countingIdlingResource)
+       // IdlingRegistry.getInstance().register(CountingIdlingResourceSingleton.countingIdlingResource)
         mainFragment = spyk(MainFragment())
     }
 
@@ -79,7 +59,7 @@ class MainFragmentTest {
     @After
     fun tearDown() {
         stopKoin()
-        IdlingRegistry.getInstance().unregister(CountingIdlingResourceSingleton.countingIdlingResource)
+      //  IdlingRegistry.getInstance().unregister(CountingIdlingResourceSingleton.countingIdlingResource)
 
     }
 

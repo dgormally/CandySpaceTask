@@ -13,10 +13,11 @@ import kotlinx.coroutines.flow.flowOn
 class NetworkRepoImpl(private val stackExchangeApi: StackExchangeApi): NetworkRepo{
 
 
-    override fun getUsers(username: String): Flow<NetworkResultState<List<StackUsersModel>>> =
+    override fun getUsers(username: String, pageSize: Int): Flow<NetworkResultState<List<StackUsersModel>>> =
         flow {
-            emit(stackExchangeApi.getUsers(inname = username).mapToDomain())
+            emit(stackExchangeApi.getUsers(inname = username, pageSize = pageSize).mapToDomain())
         }.flowOn(Dispatchers.IO)
+
 }
 
 

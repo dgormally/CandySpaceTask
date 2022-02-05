@@ -1,15 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: io.github.reactivecircus.flowbinding:flowbinding-android:0.12.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6b5ed5bd48929f54709f6fe6f3275b3c/transformed/jetified-flowbinding-android-0.12.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6b5ed5bd48929f54709f6fe6f3275b3c/transformed/jetified-flowbinding-android-0.12.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6b5ed5bd48929f54709f6fe6f3275b3c/transformed/jetified-flowbinding-android-0.12.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-3/6b5ed5bd48929f54709f6fe6f3275b3c/transformed/jetified-flowbinding-android-0.12.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/6b5ed5bd48929f54709f6fe6f3275b3c/transformed/jetified-flowbinding-android-0.12.0/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/6b5ed5bd48929f54709f6fe6f3275b3c/transformed/jetified-flowbinding-android-0.12.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.reactivecircus.flowbinding/flowbinding-android/0.12.0/366be400d0e4fb8df33a1cd72b67af4b4abc511a/flowbinding-android-0.12.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.github.reactivecircus.flowbinding/flowbinding-android/0.12.0/366be400d0e4fb8df33a1cd72b67af4b4abc511a/flowbinding-android-0.12.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.reactivecircus.flowbinding/flowbinding-android/0.12.0/76791806193655ac9c930a2e724338ada615a619/flowbinding-android-0.12.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/io.github.reactivecircus.flowbinding/flowbinding-android/0.12.0/76791806193655ac9c930a2e724338ada615a619/flowbinding-android-0.12.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 class GetUsersUseCase(private val networkRepo: NetworkRepo) :
     BaseUseCase<String, Flow<NetworkResultState<List<StackUsersModel>>>>() {
 
-    override fun execute(params: String): Flow<NetworkResultState<List<StackUsersModel>>> {
-        return networkRepo.getUsers(params)
+    override fun execute(name: String, pageSize: Int): Flow<NetworkResultState<List<StackUsersModel>>> {
+        return networkRepo.getUsers(name, pageSize = pageSize)
     }
 }

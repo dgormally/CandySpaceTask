@@ -840,6 +840,7 @@ attr suffixText
 attr suffixTextAppearance
 attr suffixTextColor
 attr suggestionRowLayout
+attr swipeRefreshLayoutProgressSpinnerBackgroundColor
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
@@ -1179,7 +1180,6 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
-color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1567,10 +1567,6 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
-dimen subtitle_corner_radius
-dimen subtitle_outline_width
-dimen subtitle_shadow_offset
-dimen subtitle_shadow_radius
 dimen test_mtrl_calendar_day_cornerSize
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -1730,12 +1726,18 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+id ALT
 id BOTTOM_END
 id BOTTOM_START
+id CTRL
+id FUNCTION
+id META
 id NO_DEBUG
+id SHIFT
 id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
+id SYM
 id TOP_END
 id TOP_START
 id accelerate
@@ -1772,7 +1774,6 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
-id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1795,6 +1796,8 @@ id activity_chooser_view_content
 id add
 id alertTitle
 id aligned
+id all
+id always
 id animateToEnd
 id animateToStart
 id articleDetails
@@ -1806,15 +1809,17 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseline
+id beginning
 id bidirectional
 id blocking
 id bottom
 id bounce
 id broonzeBadge
 id buttonPanel
-id cancel_action
 id cancel_button
 id center
+id center_horizontal
+id center_vertical
 id chain
 id checkbox
 id checked
@@ -1827,7 +1832,10 @@ id chronometer
 id circle_center
 id circular
 id clear_text
+id clip_horizontal
+id clip_vertical
 id coil_request_manager
+id collapseActionView
 id confirm_button
 id container
 id content
@@ -1850,6 +1858,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id disableHome
 id dragDown
 id dragEnd
 id dragLeft
@@ -1863,11 +1872,12 @@ id easeOut
 id edit_query
 id empty
 id end
-id end_padder
 id expand_activities_button
 id expanded_menu
 id fade
 id fill
+id fill_horizontal
+id fill_vertical
 id filled
 id fixed
 id flip
@@ -1883,9 +1893,11 @@ id guideline
 id header_title
 id heroName
 id home
+id homeAsUp
 id honorRequest
 id icon
 id icon_group
+id ifRoom
 id ignore
 id ignoreRequest
 id image
@@ -1936,7 +1948,6 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
-id media_actions
 id message
 id middle
 id mini
@@ -1972,6 +1983,7 @@ id multiply
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_header_container
+id never
 id none
 id normal
 id notification_background
@@ -2034,6 +2046,9 @@ id select_dialog_listview
 id selected
 id selection_type
 id shortcut
+id showCustom
+id showHome
+id showTitle
 id silverBadge
 id sin
 id slide
@@ -2056,7 +2071,6 @@ id startHorizontal
 id startVertical
 id staticLayout
 id staticPostLayout
-id status_bar_latest_event_content
 id stop
 id stretch
 id submenuarrow
@@ -2111,6 +2125,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id useLogo
 id username
 id view_offset_helper
 id view_tree_lifecycle_owner
@@ -2118,6 +2133,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id withText
 id withinBounds
 id wrap
 id wrap_content
@@ -2252,17 +2268,8 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout notification_action
 layout notification_action_tombstone
-layout notification_media_action
-layout notification_media_cancel_action
-layout notification_template_big_media
-layout notification_template_big_media_custom
-layout notification_template_big_media_narrow
-layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
-layout notification_template_lines_media
-layout notification_template_media
-layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout progress_layout
@@ -2636,7 +2643,6 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
-style FragmentScenarioEmptyFragmentActivityTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar
@@ -2760,14 +2766,9 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
-style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
-style TextAppearance_Compat_Notification_Line2_Media
-style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
-style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
-style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Design_CollapsingToolbar_Expanded
 style TextAppearance_Design_Counter
 style TextAppearance_Design_Counter_Overflow
@@ -3243,6 +3244,7 @@ styleable State android_id constraints
 styleable StateListDrawable android_constantSize android_dither android_enterFadeDuration android_exitFadeDuration android_variablePadding android_visible
 styleable StateListDrawableItem android_drawable
 styleable StateSet defaultState
+styleable SwipeRefreshLayout swipeRefreshLayoutProgressSpinnerBackgroundColor
 styleable SwitchCompat android_textOff android_textOn android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchMaterial useMaterialThemeColors
 styleable TabItem android_icon android_layout android_text

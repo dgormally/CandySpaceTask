@@ -9,4 +9,5 @@ dependencies {
     implementation(deps.squareup.loggingInterceptor)
     implementation(deps.koin.core)
     implementation(deps.squareup.networkResponseAdapter)
+
 }
