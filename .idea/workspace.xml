@@ -17,9 +17,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b634d9ea-7208-47e9-a2cf-04514008bf04" name="Default Changelist" comment="Added 3 unit tests for MainViewModel.kt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b634d9ea-7208-47e9-a2cf-04514008bf04" name="Default Changelist" comment="Added 3 unit tests for MainViewModel.kt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
