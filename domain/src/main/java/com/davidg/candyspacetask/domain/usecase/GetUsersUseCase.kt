@@ -11,6 +11,6 @@ class GetUsersUseCase(private val networkRepo: NetworkRepo) :
     BaseUseCase<String, Flow<NetworkResultState<List<StackUsersModel>>>>() {
 
     override fun execute(name: String, pageSize: Int): Flow<NetworkResultState<List<StackUsersModel>>> {
-        return networkRepo.getUsers(name, pageSize = pageSize)
+        return networkRepo.getUsers(name = name, pageSize = pageSize)
     }
 }

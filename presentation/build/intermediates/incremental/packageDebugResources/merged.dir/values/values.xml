@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorAccent">@color/colorSecondaryVariant</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorSecondaryVariant">#0039CB</color>
+    <color name="gray">#dddddd</color>
+    <color name="white">#ffffff</color>
+    <string name="app_name">CandySpace Task</string>
+    <string name="enter_search">Enter search here..</string>
+    <string name="no_results">No results found. Please try again</string>
+    <string name="opps">Opps something went wrong, please try again</string>
+    <string name="profileImage">Profile Image</string>
+    <string name="search">Search</string>
+    <style name="Theme.CandySpace" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorError">@color/colorOnSecondary</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:windowBackground">@color/gray</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>
